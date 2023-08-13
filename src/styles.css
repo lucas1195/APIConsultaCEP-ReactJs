@@ -1,0 +1,109 @@
+.container{
+    height: 100vh; /*vh = Pega o tamnho do view document e aplica 100%*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Alinhamento dos items vai ser em colunas*/
+    background: linear-gradient(#121212, #212b46);
+
+}
+
+.title{
+    font-size: 5rem;
+    color: ghostwhite;
+    animation: flipTitle 2s;
+}
+
+@keyframes flipTitle{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+    
+}
+
+.containerInput{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.9375rem;
+    margin: 1rem;
+    display: flex;
+    border-radius: 0.3rem;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+}
+
+.containerInput input{
+    background-color: transparent;
+    border: 0;
+    color: #FFF;
+    outline: none;
+}
+
+.containerInput input::placeholder{
+    color: #d9d3d3;
+}
+
+.buttonSearch{
+    background-color: transparent; 
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.25);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Coloca os itens um em cima do outro*/
+    
+   
+    
+    
+    background-color: #FFF;
+    width: 31.25;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    animation: flipTitle 2s;
+    
+}
+
+.main h2{
+    margin-bottom: 1.5rem;
+    font-size: 2.438rem;
+}
+
+.main span{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.reactLogo img{
+    height: 5rem;
+    animation: flipTitle 2s;
+}
+
+@media (max-width: 620px){
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .main h2{
+        font-size: 1.216rem;
+    }
+
+    .main{
+        width: 80%;
+        min-height: 15.625rem;
+    }
+
+}
+
+
